@@ -7,29 +7,31 @@ int main()
 	ShowWindow(GetConsoleWindow(), SW_HIDE);
 	SwapMouseButton(true);
 	
-	// finding battery percentage
-	SYSTEM_POWER_STATUS status;
-	SYSTEMTIME time;
-	
-	GetSystemTime(&time);
-	GetSystemPowerStatus(&status);
-	int life = status.BatteryLifePercent;
-	
-	if (status.BatteryLifePercent == 69)
+	while (1)
 	{
-		MessageBox(NULL, "damn son", "OOOoooo DAMN\n69 PERCENT!!!", NULL);
+		// finding battery percentage
+		SYSTEM_POWER_STATUS status;
+		SYSTEMTIME time;
+	
+		GetLocalTime(&time);
+		GetSystemPowerStatus(&status);
+		int life = status.BatteryLifePercent;
+	
+		if (status.BatteryLifePercent == 69){
+			MessageBox(NULL, "OOOHHHH DAMN\nBATTERY AT 69 PERCENT!!!", "DAMN SON", NULL);
+		}
+	
+		if (time.wHour == 18 && time.wMinute == 9){
+			MessageBox(NULL, "LOOK AT THE TIME\n69!!!!!!\nTime to go to bed (;", "OH DAMN", NULL);
+		}
+	
+		if (time.wHour == 06 && time.wMinute == 9){
+			MessageBox(NULL, "LOOK AT THE TIME\n69!!!!!!\nhave u had ur brakefast?! (;", "OH DAMN", NULL);
+		}
+		
+		else {continue;}
 	}
 	
-	if (time.wHour - 2 == 6 && time.wMinute == 9)
-	{
-		MessageBox(NULL, "OH DAMN", "LOOK AT THE TIME\n69!!!!!!", NULL);
-	}
-	
-	else
-	{
-		// do nothing
-		return 0;
-	}
-	
+	// good pracice
 	return 0;
 }

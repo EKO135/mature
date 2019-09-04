@@ -4,7 +4,7 @@ very mature malware
 
 run this:
 ```
-  g++ dropper.cpp -o <what ever name>
+  g++ dropper.cpp -o <any-name-you-fucking-want>
   g++ main.cpp -o main
 ```
 if you dont have g++ as an envirnment variable then download MinGW and run this:

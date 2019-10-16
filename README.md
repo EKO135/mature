@@ -9,8 +9,8 @@ run this:
 ```
 if you dont have g++ as an envirnment variable then download MinGW and run this:
 ```
-  path/to/MinGW/bin/g++.exe path/to/dropper.cpp -o path/for/executable.exe
-  path/to/MinGW/bin/g++.exe path/to/main.cpp -o path/for/main.exe
+  path/to/MinGW/bin/g++.exe path/to/dropper.cpp -o path/for/executable
+  path/to/MinGW/bin/g++.exe path/to/main.cpp -o path/for/main
 ```
 
 if you dont understand what any of this shit means then dont bother. Oh and you need both files in the same directory

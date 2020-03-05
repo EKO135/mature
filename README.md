@@ -2,6 +2,8 @@
 very mature malware
 (btw this is just a joke)
 
+i made this for literally no reason except dumb ass friends
+
 run this:
 ```
   g++ dropper.cpp -o <any-name-you-fucking-want>
